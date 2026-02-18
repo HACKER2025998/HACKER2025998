@@ -14,3 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+### 🛠 Langages et Technologies
+![Python](https://img.shields.io)
+![C](https://img.shields.io)
+![C++](https://img.shields.io)
+![Go](https://img.shields.io)
+![Dart](https://img.shields.io)
+![Lua](https://img.shields.io)
+![Bash](https://img.shields.io)
+![PowerShell](https://img.shields.io)
+
+
+
