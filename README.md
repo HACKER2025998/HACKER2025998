@@ -16,7 +16,6 @@ Here are some ideas to get you started:
 -->
 
 ### 🛠 Langages and tools
-[![Mes compétences](https://skillicons.dev)](https://skillicons.dev)
 ![Python](https://img.shields.io)
 ![C](https://img.shields.io)
 ![C++](https://img.shields.io)
