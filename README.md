@@ -15,7 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-### 🛠 Langages et Technologies
+### 🛠 Langages and tools
+[![Mes compétences](https://skillicons.dev)](https://skillicons.dev)
 ![Python](https://img.shields.io)
 ![C](https://img.shields.io)
 ![C++](https://img.shields.io)
