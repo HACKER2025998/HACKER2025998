@@ -1,0 +1,59 @@
+# Génère les cartes "TELEMETRY" du README directement dans le repo :
+#   profile/stats.svg · profile/top-langs.svg · profile/snake-dark.svg · profile/snake-light.svg
+# Plus de dépendance aux instances Vercel publiques (souvent rate-limitées).
+name: Profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # chaque jour à 03:17 UTC
+  workflow_dispatch:         # bouton "Run workflow" dans l'onglet Actions
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Snake (contributions)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-dark.svg?palette=github-dark&color_snake=#00F0FF&color_dots=#161B22,#033A44,#056874,#08A3B4,#00F0FF
+            profile/snake-light.svg?palette=github-light&color_snake=#FF2E97
+
+      - name: Stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&rank_icon=github&bg_color=05070F&title_color=00F0FF&icon_color=FF2E97&text_color=C9D1D9&ring_color=00F0FF
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=10&hide_border=true&bg_color=05070F&title_color=00F0FF&text_color=C9D1D9
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore(profile): refresh telemetry cards" || exit 0
+          git push

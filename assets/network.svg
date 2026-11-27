@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 470" width="1000" height="470" xml:space="preserve" font-family="&#x27;JetBrains Mono&#x27;,&#x27;Fira Code&#x27;,&#x27;Cascadia Code&#x27;,&#x27;SF Mono&#x27;,Menlo,Monaco,&#x27;DejaVu Sans Mono&#x27;,Consolas,&#x27;Liberation Mono&#x27;,&#x27;Courier New&#x27;,monospace" ><style>text,tspan{white-space:pre}</style>
+<defs>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#00F0FF" stroke-opacity=".06"/></pattern>
+<filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="nglow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00F0FF" flood-opacity=".35"/></filter>
+<path id="r_srv" d="M110 230 H700 V100 H850"/>
+<path id="r_usr" d="M110 230 H850"/>
+<path id="r_dmz" d="M110 230 H700 V360 H850"/>
+<path id="r_threat" d="M185 100 C 255 100, 300 130, 300 198"/>
+<path id="r_log" d="M330 262 V385 H370"/>
+<clipPath id="frame"><rect width="1000" height="470" rx="16"/></clipPath>
+</defs>
+<style>.flow{stroke-dasharray:4 8;animation:flow 1s linear infinite}@keyframes flow{to{stroke-dashoffset:-24}}.logf{stroke-dasharray:3 6;animation:flow 1.4s linear infinite}.pulse{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}</style>
+<g clip-path="url(#frame)">
+<rect width="1000" height="470" fill="#05070F"/><rect width="1000" height="470" fill="url(#grid)"/>
+<text x="24" y="34" font-size="14" font-weight="700" fill="#00F0FF">// LIVE TOPOLOGY<tspan font-weight="400" fill="#8B949E" font-size="12">  —  le type de réseau que je conçois &amp; sécurise</tspan></text>
+<circle class="pulse" cx="888" cy="29" r="4.5" fill="#39FF88" filter="url(#glow)"/>
+<text x="976" y="34" font-size="12" font-weight="700" fill="#39FF88" text-anchor="end">MONITORING</text>
+<path d="M185 230 H255" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path class="flow" d="M185 230 H255" fill="none" stroke="#00F0FF" stroke-opacity=".6" stroke-width="1.6"/>
+<path d="M405 230 H485" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path class="flow" d="M405 230 H485" fill="none" stroke="#00F0FF" stroke-opacity=".6" stroke-width="1.6"/>
+<path d="M635 230 H775" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path class="flow" d="M635 230 H775" fill="none" stroke="#00F0FF" stroke-opacity=".6" stroke-width="1.6"/>
+<path d="M700 230 V100 H775" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path class="flow" d="M700 230 V100 H775" fill="none" stroke="#00F0FF" stroke-opacity=".6" stroke-width="1.6"/>
+<path d="M700 230 V360 H775" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path class="flow" d="M700 230 V360 H775" fill="none" stroke="#00F0FF" stroke-opacity=".6" stroke-width="1.6"/>
+<path class="logf" d="M330 262 V385 H370" fill="none" stroke="#FFB800" stroke-opacity=".55" stroke-width="1.6"/>
+<path class="logf" d="M560 262 V385 H520" fill="none" stroke="#FFB800" stroke-opacity=".55" stroke-width="1.6"/>
+<path d="M185 100 C 255 100, 300 130, 300 198" fill="none" stroke="#FF3B3B" stroke-opacity=".35" stroke-width="1.6" stroke-dasharray="2 5"/>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-0.00s" repeatCount="indefinite"><mpath xlink:href="#r_srv"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-1.45s" repeatCount="indefinite"><mpath xlink:href="#r_srv"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-2.90s" repeatCount="indefinite"><mpath xlink:href="#r_srv"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-0.70s" repeatCount="indefinite"><mpath xlink:href="#r_usr"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-2.15s" repeatCount="indefinite"><mpath xlink:href="#r_usr"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-3.60s" repeatCount="indefinite"><mpath xlink:href="#r_usr"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-1.40s" repeatCount="indefinite"><mpath xlink:href="#r_dmz"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-2.85s" repeatCount="indefinite"><mpath xlink:href="#r_dmz"/></animateMotion></circle>
+<circle r="4" fill="#39FF88" filter="url(#glow)"><animateMotion dur="4.2s" begin="-4.30s" repeatCount="indefinite"><mpath xlink:href="#r_dmz"/></animateMotion></circle>
+<circle r="5" fill="#FF3B3B" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.35;1" calcMode="linear"><mpath xlink:href="#r_threat"/></animateMotion><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.35;0.36;1" dur="6s" repeatCount="indefinite"/></circle>
+<circle cx="300" cy="198" r="0" fill="none" stroke="#FF3B3B" stroke-width="2.5"><animate attributeName="r" values="0;0;4;32;32" keyTimes="0;0.35;0.36;0.6;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.35;0.36;0.6;1" dur="6s" repeatCount="indefinite"/></circle>
+<g opacity="0"><rect x="226" y="148" width="92" height="22" rx="4" fill="#FF3B3B" fill-opacity=".15" stroke="#FF3B3B"/><text x="272" y="164" font-size="12" font-weight="700" fill="#FF3B3B" text-anchor="middle">ACL DENY</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.35;0.37;0.66;0.7;1" dur="6s" repeatCount="indefinite"/></g>
+<circle r="4" fill="#FFB800" filter="url(#glow)" opacity="0"><animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.37;0.5;1" calcMode="linear"><mpath xlink:href="#r_log"/></animateMotion><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.37;0.38;0.5;0.51;1" dur="6s" repeatCount="indefinite"/></circle>
+<rect x="35" y="68" width="150" height="64" rx="10" fill="#0B1220" stroke="#FF3B3B" stroke-width="1.6"><animate attributeName="stroke-opacity" values="1;.3;1" dur="1.2s" repeatCount="indefinite"/></rect>
+<text x="110" y="96" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">THREAT ACTOR</text>
+<text x="110" y="116" font-size="11" fill="#8B949E" text-anchor="middle">scan · bruteforce</text>
+<circle cx="173" cy="79" r="3" fill="#FF3B3B"><animate attributeName="opacity" values="1;.2;1" dur="2.00s" repeatCount="indefinite"/></circle>
+<rect x="35" y="198" width="150" height="64" rx="10" fill="#0B1220" stroke="#8B949E" stroke-width="1.6"></rect>
+<text x="110" y="226" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">INTERNET</text>
+<text x="110" y="246" font-size="11" fill="#8B949E" text-anchor="middle">WAN · untrusted</text>
+<circle cx="173" cy="209" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.71s" repeatCount="indefinite"/></circle>
+<rect x="255" y="198" width="150" height="64" rx="10" fill="#0B1220" stroke="#00F0FF" stroke-width="1.6" filter="url(#nglow)"></rect>
+<text x="330" y="226" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">FIREWALL</text>
+<text x="330" y="246" font-size="11" fill="#8B949E" text-anchor="middle">pfSense · IDS/IPS</text>
+<circle cx="393" cy="209" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.12s" repeatCount="indefinite"/></circle>
+<rect x="485" y="198" width="150" height="64" rx="10" fill="#0B1220" stroke="#00F0FF" stroke-width="1.6" filter="url(#nglow)"></rect>
+<text x="560" y="226" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">CORE L3</text>
+<text x="560" y="246" font-size="11" fill="#8B949E" text-anchor="middle">Cisco · VLAN · ACL</text>
+<circle cx="623" cy="209" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="0.99s" repeatCount="indefinite"/></circle>
+<rect x="775" y="68" width="150" height="64" rx="10" fill="#0B1220" stroke="#00F0FF" stroke-width="1.6" filter="url(#nglow)"></rect>
+<text x="850" y="96" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">VLAN10 · SRV</text>
+<text x="850" y="116" font-size="11" fill="#8B949E" text-anchor="middle">Linux · AD · GLPI</text>
+<circle cx="913" cy="79" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.72s" repeatCount="indefinite"/></circle>
+<rect x="775" y="198" width="150" height="64" rx="10" fill="#0B1220" stroke="#00F0FF" stroke-width="1.6" filter="url(#nglow)"></rect>
+<text x="850" y="226" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">VLAN20 · USERS</text>
+<text x="850" y="246" font-size="11" fill="#8B949E" text-anchor="middle">DHCP · DNS · VPN</text>
+<circle cx="913" cy="209" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.76s" repeatCount="indefinite"/></circle>
+<rect x="775" y="328" width="150" height="64" rx="10" fill="#0B1220" stroke="#00F0FF" stroke-width="1.6" filter="url(#nglow)"></rect>
+<text x="850" y="356" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">VLAN30 · DMZ</text>
+<text x="850" y="376" font-size="11" fill="#8B949E" text-anchor="middle">Nginx · Docker</text>
+<circle cx="913" cy="339" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.01s" repeatCount="indefinite"/></circle>
+<rect x="370" y="353" width="150" height="64" rx="10" fill="#0B1220" stroke="#FFB800" stroke-width="1.6"><animate attributeName="stroke" values="#FFB800;#FFB800;#FF3B3B;#FF3B3B;#FFB800;#FFB800" keyTimes="0;0.5;0.51;0.8;0.81;1" dur="6s" repeatCount="indefinite"/></rect>
+<text x="445" y="381" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle">SOC · SIEM</text>
+<text x="445" y="401" font-size="11" fill="#8B949E" text-anchor="middle">Wazuh · Graylog</text>
+<circle cx="508" cy="364" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.08s" repeatCount="indefinite"/></circle>
+<rect x="481" y="194" width="158" height="72" rx="13" fill="none" stroke="#00F0FF" stroke-width="1.2"><animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.4s" repeatCount="indefinite"/></rect>
+<g opacity="0"><text x="445" y="436" font-size="12" font-weight="700" fill="#FF3B3B" text-anchor="middle">[!] ALERT · bruteforce SSH bloqué</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.52;0.8;0.82;1" dur="6s" repeatCount="indefinite"/></g>
+<g font-size="11" fill="#8B949E"><circle cx="600" cy="444" r="4" fill="#39FF88"/><text x="610" y="448">trafic légitime</text><circle cx="728" cy="444" r="4" fill="#FF3B3B"/><text x="738" y="448">menace bloquée</text><line x1="854" y1="444" x2="874" y2="444" stroke="#FFB800" stroke-width="2" stroke-dasharray="3 3"/><text x="880" y="448">logs → SIEM</text></g>
+</g>
+<rect x=".75" y=".75" width="998.5" height="468.5" rx="16" fill="none" stroke="#00F0FF" stroke-opacity=".22" stroke-width="1.5"/>
+</svg>
