@@ -13,7 +13,7 @@
 <style>.flow{stroke-dasharray:4 8;animation:flow 1s linear infinite}@keyframes flow{to{stroke-dashoffset:-24}}.logf{stroke-dasharray:3 6;animation:flow 1.4s linear infinite}.pulse{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}</style>
 <g clip-path="url(#frame)">
 <rect width="1000" height="470" fill="#05070F"/><rect width="1000" height="470" fill="url(#grid)"/>
-<text x="24" y="34" font-size="14" font-weight="700" fill="#00F0FF">// LIVE TOPOLOGY<tspan font-weight="400" fill="#8B949E" font-size="12">  —  le type de réseau que je conçois &amp; sécurise</tspan></text>
+<text x="24" y="34" font-size="14" font-weight="700" fill="#00F0FF">// LIVE TOPOLOGY<tspan font-weight="400" fill="#8B949E" font-size="12">  —  the kind of network I design &amp; secure</tspan></text>
 <circle class="pulse" cx="888" cy="29" r="4.5" fill="#39FF88" filter="url(#glow)"/>
 <text x="976" y="34" font-size="12" font-weight="700" fill="#39FF88" text-anchor="end">MONITORING</text>
 <path d="M185 230 H255" fill="none" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
@@ -75,8 +75,8 @@
 <text x="445" y="401" font-size="11" fill="#8B949E" text-anchor="middle">Wazuh · Graylog</text>
 <circle cx="508" cy="364" r="3" fill="#39FF88"><animate attributeName="opacity" values="1;.2;1" dur="1.08s" repeatCount="indefinite"/></circle>
 <rect x="481" y="194" width="158" height="72" rx="13" fill="none" stroke="#00F0FF" stroke-width="1.2"><animate attributeName="stroke-opacity" values=".7;0;.7" dur="2.4s" repeatCount="indefinite"/></rect>
-<g opacity="0"><text x="445" y="436" font-size="12" font-weight="700" fill="#FF3B3B" text-anchor="middle">[!] ALERT · bruteforce SSH bloqué</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.52;0.8;0.82;1" dur="6s" repeatCount="indefinite"/></g>
-<g font-size="11" fill="#8B949E"><circle cx="600" cy="444" r="4" fill="#39FF88"/><text x="610" y="448">trafic légitime</text><circle cx="728" cy="444" r="4" fill="#FF3B3B"/><text x="738" y="448">menace bloquée</text><line x1="854" y1="444" x2="874" y2="444" stroke="#FFB800" stroke-width="2" stroke-dasharray="3 3"/><text x="880" y="448">logs → SIEM</text></g>
+<g opacity="0"><text x="445" y="436" font-size="12" font-weight="700" fill="#FF3B3B" text-anchor="middle">[!] ALERT · SSH bruteforce blocked</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5;0.52;0.8;0.82;1" dur="6s" repeatCount="indefinite"/></g>
+<g font-size="11" fill="#8B949E"><circle cx="600" cy="444" r="4" fill="#39FF88"/><text x="610" y="448">legit traffic</text><circle cx="728" cy="444" r="4" fill="#FF3B3B"/><text x="738" y="448">blocked threat</text><line x1="854" y1="444" x2="874" y2="444" stroke="#FFB800" stroke-width="2" stroke-dasharray="3 3"/><text x="880" y="448">logs → SIEM</text></g>
 </g>
 <rect x=".75" y=".75" width="998.5" height="468.5" rx="16" fill="none" stroke="#00F0FF" stroke-opacity=".22" stroke-width="1.5"/>
 </svg>

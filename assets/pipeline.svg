@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 290" width="1000" height="290" xml:space="preserve" font-family="&#x27;JetBrains Mono&#x27;,&#x27;Fira Code&#x27;,&#x27;Cascadia Code&#x27;,&#x27;SF Mono&#x27;,Menlo,Monaco,&#x27;DejaVu Sans Mono&#x27;,Consolas,&#x27;Liberation Mono&#x27;,&#x27;Courier New&#x27;,monospace" ><style>text,tspan{white-space:pre}</style>
+<defs>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#00F0FF" stroke-opacity=".06"/></pattern>
+<filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="bglow" x="-20%" y="-30%" width="140%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#39FF88" flood-opacity=".45"/></filter>
+<linearGradient id="track" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00F0FF"/><stop offset=".6" stop-color="#39FF88"/><stop offset="1" stop-color="#FF2E97"/></linearGradient>
+<path id="p_main" d="M12 136.0 H988"/>
+<path id="p_loop" d="M920 168 C 920 230, 860 230, 800 230 H200 C 140 230, 80 230, 80 168"/>
+<clipPath id="frame"><rect width="1000" height="290" rx="16"/></clipPath>
+</defs>
+<style>.flow{stroke-dasharray:4 8;animation:flow 1s linear infinite}@keyframes flow{to{stroke-dashoffset:-24}}.pulse{animation:pulse 1.6s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}</style>
+<g clip-path="url(#frame)">
+<rect width="1000" height="290" fill="#05070F"/><rect width="1000" height="290" fill="url(#grid)"/>
+<text x="24" y="34" font-size="14" font-weight="700" fill="#00F0FF">// DEVSECOPS PIPELINE<tspan font-weight="400" fill="#8B949E" font-size="12">  —  security baked into every stage</tspan></text>
+<circle class="pulse" cx="800" cy="29" r="4.5" fill="#39FF88" filter="url(#glow)"/>
+<text x="976" y="34" font-size="12" font-weight="700" fill="#39FF88" text-anchor="end">BUILD #1337 · PASSING</text>
+<text x="24" y="62" font-size="11" fill="#8B949E">shift-left  ·  automate everything  ·  trust nothing  ·  monitor forever</text>
+<line x1="12" y1="136.0" x2="988" y2="136.0" stroke="#1E293B" stroke-width="4" stroke-linecap="round"/>
+<line class="flow" x1="12" y1="136.0" x2="988" y2="136.0" stroke="#00F0FF" stroke-opacity=".55" stroke-width="1.6"/>
+<rect x="12" y="134.0" width="976" height="4" rx="2" fill="url(#track)" filter="url(#glow)"><animate attributeName="width" values="0;976;976;976" keyTimes="0;0.7;0.96;1" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;1;0" keyTimes="0;0.7;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<use xlink:href="#p_loop" fill="none" stroke="#FF2E97" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="3 6"/>
+<text x="500.0" y="248" font-size="11" fill="#FF2E97" text-anchor="middle" letter-spacing="2">↺  FEEDBACK LOOP  ·  incidents → new rules → next commit</text>
+<circle r="4.5" fill="#FF2E97" filter="url(#glow)" opacity="0"><animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.72;0.95;1" calcMode="linear"><mpath xlink:href="#p_loop"/></animateMotion><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.72;0.73;0.94;0.95;1" dur="8s" repeatCount="indefinite"/></circle>
+<circle r="6" fill="#E6FFFF" filter="url(#glow)"><animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.7;1" calcMode="linear"><mpath xlink:href="#p_main"/></animateMotion><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.7;0.71;1" dur="8s" repeatCount="indefinite"/></circle>
+<rect x="20.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="20.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.006;0.011;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="80" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">PLAN</text>
+<text x="80" y="150" font-size="10" fill="#8B949E" text-anchor="middle">threat model</text>
+<text x="34" y="94" font-size="10" font-weight="700" fill="#8B949E">01</text>
+<g opacity="0"><text x="80" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ OK ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.006;0.011;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="160.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="160.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.106;0.111;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="220" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">CODE</text>
+<text x="220" y="150" font-size="10" fill="#8B949E" text-anchor="middle">git · pre-commit</text>
+<text x="174" y="94" font-size="10" font-weight="700" fill="#8B949E">02</text>
+<g opacity="0"><text x="220" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ SIGNED ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.106;0.111;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="300.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="300.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.207;0.212;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="360" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">BUILD</text>
+<text x="360" y="150" font-size="10" fill="#8B949E" text-anchor="middle">Docker · CI</text>
+<text x="314" y="94" font-size="10" font-weight="700" fill="#8B949E">03</text>
+<g opacity="0"><text x="360" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ PASS ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.207;0.212;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="440.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="440.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.307;0.312;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="500" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">SAST</text>
+<text x="500" y="150" font-size="10" fill="#8B949E" text-anchor="middle">code analysis</text>
+<text x="454" y="94" font-size="10" font-weight="700" fill="#8B949E">04</text>
+<g opacity="0"><text x="500" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ 0 HIGH ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.307;0.312;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="580.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="580.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.407;0.412;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="640" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">SCAN</text>
+<text x="640" y="150" font-size="10" fill="#8B949E" text-anchor="middle">deps · image · IaC</text>
+<text x="594" y="94" font-size="10" font-weight="700" fill="#8B949E">05</text>
+<g opacity="0"><text x="640" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ 0 CVE ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.407;0.412;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="720.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="720.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.508;0.513;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="780" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">DEPLOY</text>
+<text x="780" y="150" font-size="10" fill="#8B949E" text-anchor="middle">Ansible · K8s</text>
+<text x="734" y="94" font-size="10" font-weight="700" fill="#8B949E">06</text>
+<g opacity="0"><text x="780" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ LIVE ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.508;0.513;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+<rect x="860.0" y="104" width="120" height="64" rx="10" fill="#0B1220" stroke="#1E293B" stroke-width="1.6"/>
+<rect x="860.0" y="104" width="120" height="64" rx="10" fill="none" stroke="#39FF88" stroke-width="1.8" filter="url(#bglow)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.608;0.613;0.96;1" dur="8s" repeatCount="indefinite"/></rect>
+<text x="920" y="131" font-size="13" font-weight="700" fill="#E6FFFF" text-anchor="middle" letter-spacing="1">MONITOR</text>
+<text x="920" y="150" font-size="10" fill="#8B949E" text-anchor="middle">Prometheus · SIEM</text>
+<text x="874" y="94" font-size="10" font-weight="700" fill="#8B949E">07</text>
+<g opacity="0"><text x="920" y="94" font-size="10" font-weight="700" fill="#39FF88" text-anchor="middle">[ WATCH ]</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.608;0.613;0.96;1" dur="8s" repeatCount="indefinite"/></g>
+</g>
+<rect x=".75" y=".75" width="998.5" height="288.5" rx="16" fill="none" stroke="#00F0FF" stroke-opacity=".22" stroke-width="1.5"/>
+</svg>

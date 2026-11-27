@@ -1,58 +1,59 @@
-# 🚀 Installation du README — xhackerip
+# 🚀 Setup — xhackerip profile README
 
-Ton README de profil vit dans le repo spécial **`HACKER2025998/HACKER2025998`** (il existe déjà, il contient ton ancien « Hi there 👋 »).
+Your profile README lives in the special repo **`HACKER2025998/HACKER2025998`** (it already exists and holds your old "Hi there 👋").
 
-## Contenu du pack
+## What's in the pack
 
 ```
-README.md                              ← le profil
-assets/hero.svg                        ← bannière (matrix, glitch, radar, scanline)
-assets/terminal.svg                    ← terminal Kali animé (whoami, nmap des skills)
-assets/network.svg                     ← topologie réseau live (paquets, ACL DENY, alerte SIEM)
-assets/timeline.svg                    ← parcours animé
-assets/divider.svg · assets/footer.svg ← séparateurs + vagues de fin
-profile/*.svg                          ← cartes stats/langages/snake (provisoires, régénérées chaque jour)
-.github/workflows/profile-cards.yml    ← GitHub Action qui génère les cartes
+README.md                              ← the profile
+assets/hero.svg                        ← banner (matrix rain, glitch, radar, scanline)
+assets/terminal.svg                    ← animated Kali terminal (whoami, nmap of your skills)
+assets/pipeline.svg                    ← animated DevSecOps pipeline + feedback loop
+assets/network.svg                     ← live network topology (packets, ACL DENY, SIEM alert)
+assets/timeline.svg                    ← animated education & experience path
+assets/divider.svg · assets/footer.svg ← section dividers + closing waves
+profile/*.svg                          ← stats / languages / snake cards (placeholders, regenerated daily)
+.github/workflows/profile-cards.yml    ← GitHub Action that generates the cards
 ```
 
-## 1. Envoyer les fichiers
+## 1. Push the files
 
-**Option A — en ligne de commande (recommandé)**
+**Option A — command line (recommended)**
 
 ```bash
 git clone https://github.com/HACKER2025998/HACKER2025998.git
 cd HACKER2025998
-# copie TOUT le contenu du pack ici (y compris le dossier caché .github)
-cp -r /chemin/vers/xhackerip-readme/. .
+# copy EVERYTHING from the pack here (including the hidden .github folder)
+cp -r /path/to/xhackerip-readme/. .
 rm -f INSTALL.md
 git add -A
 git commit -m "feat: profile README v2 — animated"
 git push
 ```
 
-**Option B — depuis le site GitHub**
-Ouvre le repo → **Add file → Upload files** → glisse `README.md`, `assets/` et `profile/` → Commit.
-Le dossier `.github` est caché sur la plupart des systèmes : crée plutôt le fichier à la main via **Add file → Create new file**, nomme-le `.github/workflows/profile-cards.yml` et colle son contenu.
+**Option B — GitHub website**
+Open the repo → **Add file → Upload files** → drop `README.md`, `assets/` and `profile/` → Commit.
+The `.github` folder is hidden on most systems: create the file by hand instead with **Add file → Create new file**, name it `.github/workflows/profile-cards.yml` and paste its content.
 
-## 2. Lancer la télémétrie (une seule fois)
+## 2. Start the telemetry (one time only)
 
-1. Onglet **Actions** du repo → workflow **Profile cards** → **Run workflow**.
-2. Attends ~1 minute : les cartes `profile/*.svg` sont remplacées par tes vraies stats et le snake.
-3. Ensuite, ça se met à jour **tout seul chaque jour**.
+1. **Actions** tab of the repo → **Profile cards** workflow → **Run workflow**.
+2. Wait ~1 minute: the `profile/*.svg` placeholders get replaced by your real stats and the snake.
+3. From then on, it **refreshes itself every day**.
 
-> Si le job échoue sur « git push » (403) : **Settings → Actions → General → Workflow permissions → Read and write permissions** → Save, puis relance.
+> If the job fails on `git push` (403): **Settings → Actions → General → Workflow permissions → Read and write permissions** → Save, then re-run.
 
-## 3. Personnaliser
+## 3. Customize
 
-| Tu veux changer… | Où |
+| You want to change… | Where |
 |:--|:--|
-| Le texte qui se tape sous la bannière | paramètre `lines=` de l'URL `readme-typing-svg` dans `README.md` (lignes séparées par `;`) |
-| Les lignes du terminal / la topologie / la timeline | modifie les textes directement dans les `.svg` (ce sont des fichiers texte) |
-| Les couleurs | cyan `00F0FF` · magenta `FF2E97` · vert `39FF88` · ambre `FFB800` · fond `05070F` |
-| Ajouter un projet | copie un bloc `<td>…</td>` dans la section `PROJECTS` |
+| The typed text under the banner | the `lines=` parameter of the `readme-typing-svg` URL in `README.md` (lines separated by `;`, spaces as `+`) |
+| Terminal lines / pipeline / topology / timeline | edit the text directly inside the `.svg` files (they're plain text) |
+| Colors | cyan `00F0FF` · magenta `FF2E97` · green `39FF88` · amber `FFB800` · background `05070F` |
+| Add a project | copy a `<td>…</td>` block in the `PROJECTS` section |
 
 ## Notes
 
-- Toutes les animations « wow » sont des **SVG hébergés dans ton repo** : aucune dépendance externe, elles ne tomberont jamais en panne.
-- Les seuls widgets externes restants sont le texte tapé, le streak, l'activity graph et le compteur de vues. S'il y en a un qui ne s'affiche pas un jour, c'est le service qui est saturé : le reste du profil n'est pas touché.
-- Ton numéro de téléphone n'est volontairement **pas** dans le README (un profil GitHub est public et indexé). Le portfolio reste le point de contact.
+- All the "wow" animations are **SVGs hosted in your own repo**: no external dependency, they can't go down.
+- The only external widgets left are the typing text, the streak card, the activity graph and the view counter. If one of them doesn't show up some day, that service is overloaded — the rest of the profile isn't affected.
+- Your phone number is intentionally **not** in the README (a GitHub profile is public and indexed). Your portfolio stays the contact point.
